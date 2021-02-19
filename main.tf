@@ -19,4 +19,5 @@ module "static-site-stack" {
   subdomain = var.subdomain
   hostzone  = var.hostzone
   cache     = var.cache
+  prefix    = var.prefix
 }

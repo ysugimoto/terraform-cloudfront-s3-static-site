@@ -2,18 +2,18 @@
 // If you want to create example.yourdomain.com, supply "example".
 variable "subdomain" {
   description = "Specify subdomain you want deploy"
-  default     = ""
+  default     = "example"
 }
 
 // Specify hostzone domain in your AWS Route53.
 variable "hostzone" {
   description = "Specify Route53 hostzone domain which you already have"
-  default     = ""
+  default     = "poc.b12s.jp"
 }
 
-// In default, S3 bucket name will be "terraform-static-${subdomain}"
-variable "bucket-prefix" {
-  description = "You can change S3 bucket prefix what you want"
+// In default, S3 bucket name and IAM role will be "${prefix}${subdomain}"
+variable "prefix" {
+  description = "You can change S3 bucket name and IAM role prefix what you want"
   default = "terraform-static-"
 }
 

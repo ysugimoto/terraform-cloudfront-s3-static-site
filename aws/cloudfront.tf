@@ -39,6 +39,11 @@ resource "aws_cloudfront_distribution" "cloudfront" {
     default_ttl = try(var.cache.default_ttl, 0)
     max_ttl     = try(var.cache.max_ttl, 86400)
     compress    = true
+
+    lambda_function_association {
+      event_type = "viewer-request"
+      lambda_arn = aws_lambda_function.lambda-edge-router.qualified_arn
+    }
   }
 
   viewer_certificate {
@@ -52,5 +57,9 @@ resource "aws_cloudfront_distribution" "cloudfront" {
       restriction_type = "none"
     }
   }
+
+  depends_on = [
+    aws_lambda_function.lambda-edge-router,
+  ]
 }
 
