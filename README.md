@@ -31,7 +31,7 @@ Clone this repository and configure `variables.tf`. Here are configurations of v
 | prefix            | no       | terraform-static- | S3 bucket and IAM role name, and Lambda@Edge prefix. Typically declare to not to conflict other resources |
 | cache.min_ttl     | no       | 0                 | CloudFront minimum cache TTL setting                                                                      |
 | cache.default_ttl | no       | 0                 | CloudFront default cache TTL setting                                                                      |
-| cache.max_ttl     | no       | 0                 | CloudFront maximum cache TTL setting                                                                      |
+| cache.max_ttl     | no       | 86400             | CloudFront maximum cache TTL setting                                                                      |
 
 After you did configuration, let's apply:
 
