@@ -22,14 +22,14 @@ This module provided all sets of static site components in AWS:
 
 Clone this repository and configure `variables.tf`. Here are configurations of variables:
 
-| variable          | default           | description                                                                                                       |
-|:------------------|:------------------|:------------------------------------------------------------------------------------------------------------------|
-| subdomain         | None              | subdomain which you want to deploy                                                                                |
-| hostzone          | None              | specify AWS Route53 hostzone domain you already have                                                              |
-| bucket-prefix     | terraform-static- | S3 bucket name prefix. Typically add prefix to not to conflict bucket name. value must have `-` suffix if you set |
-| cache.min_ttl     | 0                 | CloudFront minimum cache TTL setting                                                                              |
-| cache.default_ttl | 0                 | CloudFront default cache TTL setting                                                                              |
-| cache.max_ttl     | 0                 | CloudFront maximum cache TTL setting                                                                              |
+| variable          | required | default           | description                                                                |
+|:------------------|:---------|:------------------|:---------------------------------------------------------------------------|
+| subdomain         | yes      | None              | subdomain which you want to deploy                                         |
+| hostzone          | yes      | None              | specify AWS Route53 hostzone domain you already have                       |
+| bucket-prefix     | no       | terraform-static- | S3 bucket name prefix. Typically add prefix to not to conflict bucket name |
+| cache.min_ttl     | no       | 0                 | CloudFront minimum cache TTL setting                                       |
+| cache.default_ttl | no       | 0                 | CloudFront default cache TTL setting                                       |
+| cache.max_ttl     | no       | 0                 | CloudFront maximum cache TTL setting                                       |
 
 After you did configuration, please apply:
 
