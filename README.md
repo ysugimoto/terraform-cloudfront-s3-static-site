@@ -9,14 +9,14 @@ Create static site using AWS CloudFront and S3 stack by Terraform.
 
 ## Describe
 
-This module provided all sets of static site components in AWS:
+This module provides all sets of static site components in AWS:
 
 - CloudFront, CDN of serving S3 files
 - S3, host static files
 - Route53, make subdomain to host your site
 - Lambda@@Edge, router for CloudFront
 - IAM, make Lambda@Edge execution role
-- Certificate Manager, make certificate for subdomain on CloudFront
+- Certificate Manager, make certificate for CloudFront
 
 **Note that Route53's hosted zone isn't under management in this module. Make sure you have one hosted zone in Route53.**
 
