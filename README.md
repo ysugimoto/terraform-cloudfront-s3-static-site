@@ -16,7 +16,7 @@ This module provided all sets of static site components in AWS:
 - Route53, make subdomain to host your site
 - Certificate Manager, make certificate for subdomain on CloudFront
 
-*Note that Route53's hosted zone isn't under management in this module. Make sure you have one hosted zone in Route53.*
+**Note that Route53's hosted zone isn't under management in this module. Make sure you have one hosted zone in Route53.**
 
 ## Usage
 
