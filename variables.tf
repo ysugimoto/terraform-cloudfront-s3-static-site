@@ -14,7 +14,7 @@ variable "hostzone" {
 // In default, S3 bucket name and IAM role will be "${prefix}${subdomain}"
 variable "prefix" {
   description = "You can change S3 bucket name and IAM role prefix what you want"
-  default = "terraform-static-"
+  default     = "terraform-static-"
 }
 
 // Override cache TTLs
