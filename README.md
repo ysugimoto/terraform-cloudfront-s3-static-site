@@ -31,11 +31,11 @@ Clone this repository and configure `variables.tf`. Here are configurations of v
 | cache.default_ttl | no       | 0                 | CloudFront default cache TTL setting                                       |
 | cache.max_ttl     | no       | 0                 | CloudFront maximum cache TTL setting                                       |
 
-After you did configuration, please apply:
+After you did configuration, let's apply:
 
 ```shell
-terraform init
-terraform apply
+$ terraform init
+$ terraform apply
 ```
 
 ## License
