@@ -40,6 +40,8 @@ $ terraform init
 $ terraform apply
 ```
 
+After finished to apply, you're ready to open host static site! A S3 bucket is created named from configuration like `${prefix}${subdomain}` (e.g. terraform-static-example). Let's put some built static files to S3 bucket and access the url of https://${subdomain}.${hostzone} :+1: 
+
 ## Important
 
 `Lambda@Edge` will be replicated all regions on CloudFront, therefore `terraform destroy` may show error like:
