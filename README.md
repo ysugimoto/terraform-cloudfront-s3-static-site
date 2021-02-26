@@ -60,7 +60,7 @@ Error: error deleting Lambda Function (${prefix}lambda-edge-router): InvalidPara
 It suspect AWS issue, but we don't have solve it.
 Workaround refers to here https://github.com/hashicorp/terraform-provider-aws/issues/1721
 
-To do mannualy, follow below:
+To do manually, follow below steps:
 
 ### 1. Delete Lambda@Edge state
 
