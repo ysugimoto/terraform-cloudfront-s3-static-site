@@ -76,7 +76,7 @@ $ terraform destroy
 
 ### 3. Delete Lambda@Edge function
 
-Adter around 1 hour to stop replications, you need to delete that function manually (from console or CLI)
+After around 1 hour stop replications, you need to delete that function manually (from console or CLI)
 
 
 ## License
